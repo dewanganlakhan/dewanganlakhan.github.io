@@ -10880,7 +10880,7 @@ Copyright (c) 2015 Daniel Eden
 }
 @media only screen and (max-width: 768px) {
   .cd-headline {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -13693,7 +13693,7 @@ figcaption {
   }
 }
 .rn-content-wrapper .header-left .header-info-content h4 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 575px) {
