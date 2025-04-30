@@ -1,667 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lakhan Dewangan</title>
-    <meta name="robots" content="index, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/slick.css">
-    <link rel="stylesheet" href="assets/slick-theme.css">
-    <link rel="stylesheet" href="assets/aos.css">
-    <link rel="stylesheet" href="assets/feature.css">
-    <!-- Style css -->
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakhan Dewangan | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            // Modern color palette
+            primary: {
+              light: '#6366f1', // Indigo-500
+              dark: '#312e81'   // Indigo-900
+            },
+            secondary: {
+              light: '#a5b4fc', // Indigo-300
+              dark: '#4338ca'   // Indigo-700
+            },
+            background: {
+              light: '#f9fafb', // Gray-50
+              dark: '#0f172a'   // Slate-900
+            },
+            surface: {
+              light: '#ffffff', // White
+              dark: '#1e293b'   // Slate-800
+            },
+            text: {
+              light: '#1f2937', // Gray-800
+              dark: '#f8fafc'   // Slate-50
+            },
+            accent: {
+              light: '#8b5cf6', // Violet-500
+              dark: '#7c3aed'   // Violet-600
+            }
+          }
+        }
+      }
+    }
+    
+    // Function to initialize theme based on system preference or saved preference
+    function initTheme() {
+      // Check for saved preference
+      const savedTheme = localStorage.getItem('theme');
+      
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    }
+    
+    // Call initialization on page load
+    window.addEventListener('DOMContentLoaded', initTheme);
+  </script>
+  <style>
+    .dark body {
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
-<body class="white-version spybody" data-spy="scroll" data-bs-target=".navbar-example2" data-offset="70">
+<body class="font-sans transition-all duration-300">
 
-    <div class="main-page-wrapper">
-        <div class="rn-header-image-area">
-            <div class="bg_image--9 bg_image h-100">
-            </div>
+  <!-- Header with Theme Toggle -->
+  <header class="dark:bg-primary-dark bg-primary-light text-white p-6 rounded-b-xl shadow-lg">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div>
+          <h1 class="text-3xl font-bold">Lakhan Dewangan</h1>
+          <p class="text-lg">Developer · Mentor · Trainer</p>
         </div>
-        <div class="rn-content-wrapper">
-            <div class="container">
-                <div class="row padding-tb m_dec-top align-items-center d-flex">
-                    <div class="col-lg-6">
-                        <div class="header-left">
-                            <div class="header-thumbnail">
-                                <img src="assets/lakhan8.jpg" alt="personal_portfolio">
-                            </div>
-                            <div class="header-info-content">
-                                <h4 class="title">Lakhan Dewangan</h4>
-                                <div class="status-info">
-                                    I am a  <span class="header-caption" id="page-top">
-                                        <!-- type headline start-->
-                                        <span class="cd-headline clip is-full-width">
-                                            <span></span>
-                                            <!-- ROTATING TEXT -->
-                                            <span class="cd-words-wrapper">
-                                                <b class="is-visible">Developer.</b>
-                                                <b class="is-hidden">Mentor.</b>
-                                                <b class="is-hidden">Trainer.</b>
-                                            </span>
-                                        </span>
-                                        <!-- type headline end -->
-                                    </span>
-                                </div>
-                                <!-- social sharea area -->
-                                <div class="social-share-style-1 border-none mt--40">
-                                    <ul class="social-share d-flex liststyle">
-                                        <li class="instagram">
-                                            <a href="https://www.instagram.com/dewanganlakhan/" target="_blank">
-                                                <i data-feather="instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li class="facebook">
-                                            <a href="https://www.facebook.com/dewanganlakhan" target="_blank">
-                                                <i data-feather="facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="https://twitter.com/dewanganlakhan" target="_blank">
-                                                <i data-feather="twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- end -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="header-right">
-                            <ul class="rn-header-content">
-                                <li><span class="overhead">EMAIL</span><a href="mailto:dewanganlakhan@gmail.com" class="color-primary">dewanganlakhan@gmail.com</a></li>
-                                <li><span class="overhead">TELEGRAM</span><a href="https://t.me/lakhandewangan">lakhandewangan</a></li>
-                            </ul>
-                            <ul class="rn-header-content two">
-                                <li><span class="overhead">BIRTHDAY</span>07 June</li>
-                                <li><span class="overhead">LOCATION</span>Bilaspur, C.G., India</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--40 tab-content-wrapper">
-                    <div class="col-lg-2">
-                        <div class="d-flex flex-wrap align-content-start h-100 w-100">
-                            <div class="position-sticky content-wrapper sticky-top rbt-sticky-top-adjust-three w-100">
-                                <ul class="nav tab-navigation-button tab-smlg flex-column nav-pills me-3" id="v-pills-tab" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link rn-nav active" id="v-pills-home-tab" data-bs-toggle="tab" href="#v-pills-Javascript" role="tab" aria-selected="true">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link rn-nav " id="v-pills-profile-tab" data-bs-toggle="tab" href="#v-pills-Design" role="tab" aria-selected="true">Who Can</a>
-                                    </li>
-
-
-                                    <li class="nav-item">
-                                        <a class="nav-link rn-nav" id="v-pills-wordpress-tab" data-bs-toggle="tab" href="#v-pills-Wordpress" role="tab" aria-selected="true">How To</a>
-                                    </li>
-
-                                    <!--<li class="nav-item">
-                                        <a class="nav-link rn-nav" id="v-pills-settings-tabs" data-bs-toggle="tab" href="#v-pills-settings" role="tab" aria-selected="true">Process</a>
-                                    </li>-->
-
-                                    <li class="nav-item">
-                                        <a class="nav-link rn-nav" id="v-pills-python-tabs" data-bs-toggle="tab" href="#v-pills-python" role="tab" aria-selected="true">Students</a>
-                                    </li>
-
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-10">
-                        <div class="tab-area">
-                            <div class="d-flex align-items-start">
-                                <div class="tab-content" id="v-pills-tabContent">
-
-                                    <div class="tab-pane fade  show active" id="v-pills-Javascript" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                        <!-- Start about Area -->
-                                        <div id="about" class="rn-about-area">
-                                            <div class="container">
-                                                <!--<div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="section-title text-left">
-                                                            <h2 class="title small-h2">Call Center => IT Services => IT Products</h2>
-                                                        </div>
-                                                    </div>
-                                                </div>-->
-                                                <div class="row">
-                                                    <div class="col-lg-5">
-                                                        <div class="image-area shadow-none padding-none" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
-                                                            <div class="thumbnail">
-                                                                <img src="assets/lakhan3.jpg" alt="Personal Portfolio Image">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="col-lg-7 mt_sm--30">
-                                                        <div class="contant">
-                                                            <div class="section-title text-left">
-                                                                <!--<span class="subtitle">
-            To Mentor 100 Students
-        </span>-->
-                                                                <h2 class="title small-h2">On a Mission to Mentor 100 Students</h2>
-                                                            </div>
-                                                            <p class="discription color-body-white">
-                                                                <b>India was the leader in Call Centers followed by IT services now it's going to be a Software Hub.</b>
-                                                            </p>
-                                                            <p class="discription color-body-white">
-                                                                I'm a software engineer running a small company called
-                                                                <a href="https://criptocode.com/" target="_blank" class="color-body-white">
-                                                                    <b>   Criptocode IT Solutions</b>
-                                                                </a> in Bilaspur, Chhattisgarh, India.
-                                                                <br /> My goal is to mentor 100 students in web development for free.
-                                                            </p>
-                                                            <div class="section-title text-left">
-                                                                <span class="subtitle">
-                                                                    <br />Here's how I can help you:
-                                                                </span>
-                                                            </div>
-                                                            <ol>
-                                                                <li>
-
-                                                                    I'll share links to useful YouTube courses and tutorials.
-
-                                                                </li>
-                                                                <li>
-
-                                                                    I'll give you tips, tricks, and hacks for quick learning and problem-solving.
-
-                                                                </li>
-                                                                <li>
-
-                                                                    You'll work on real projects for hands-on experience, helping you gain confidence.
-
-                                                                </li>
-                                                            </ol>
-                                                            <a class="rn-btn" href="https://www.instagram.com/dewanganlakhan/" target="_blank">
-                                                                <span>
-                                                                    To join, follow me on Instagram
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- what I am doing area -->
-                                                <div class="row mt--50">
-                                                    <div class="col-12 text-center">
-                                                        <h6 class="title color-lightn mb--30">
-                                                            What I am Doing
-                                                        </h6>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="service-card-one border-style">
-                                                            <div class="inner">
-                                                                <i data-feather="cast"></i>
-                                                                <h6 class="title color-lightn">
-                                                                    Mission
-                                                                </h6>
-                                                                <p class="describe color-body-white">
-                                                                    On a mission to successfully transform the careers of 100 students through mentorship.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6 mb_sm--30 mb_md--30">
-                                                        <div class="service-card-one border-style">
-                                                            <div class="inner">
-                                                                <i data-feather="edit"></i>
-                                                                <h6 class="title color-lightn">
-                                                                    Vision
-                                                                </h6>
-                                                                <p class="describe color-body-white">
-                                                                    <!--India is on a roller coaster ride of tech development.<br />-->
-                                                                    Every college student must know how to create a simple website.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <!-- what I am doing area End -->
-                                                <div class="row mt--50">
-                                                    <!-- Start Single Progressbar  -->
-                                                    <div class="col-lg-6 col-md-6 col-12">
-                                                        <div class="progress-wrapper">
-                                                            <div class="content">
-                                                                <span class="subtitle">Skills</span>
-                                                                <h4 class="maintitle">
-                                                                    Front End
-                                                                </h4>
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        HTML
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">95%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        CSS
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.6s" data-wow-delay=".4s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">90%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        JAVASCRIPT
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay=".5s" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">70%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progressbar  -->
-                                                    <!-- Start Single Progressbar  -->
-                                                    <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
-                                                        <div class="progress-wrapper">
-                                                            <div class="content">
-                                                                <span class="subtitle">Skills</span>
-                                                                <h4 class="maintitle">
-                                                                    Back End
-                                                                </h4>
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        PYTHON
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">90%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        Django (Python Framework for Web)
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 95%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">95%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        MySQL (Database)
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">85%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!--
-                                                                <div class="progress-charts">
-                                                                    <h6 class="heading heading-h6">
-                                                                        Asp.net MVC
-                                                                    </h6>
-                                                                    <div class="progress">
-                                                                        <div class="progress-bar wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay=".6s" role="progressbar" style="width: 75%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                                            <span class="percent-label">75%</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>-->
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!-- End Single Progressbar  -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End about Area -->
-                                    </div>
-
-                                    <div class="tab-pane fade" id="v-pills-Design" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                        <div class="container" id="resume">
-                                            <!-- resume area start -->
-                                            <div class="personal-experience-inner">
-                                                <div class="row">
-                                                    <div class="personal-experience-inner">
-                                                        <div class="row m--0">
-                                                            <!-- Start Skill List Area  -->
-                                                            <div class="col-lg-12 col-md-12 col-12">
-                                                                <div class="content">
-                                                                    <h4 class="maintitle">
-                                                                        Who can join the mentorship program:
-                                                                    </h4>
-                                                                    <p>
-                                                                        There are two types of people who can join my program:
-
-                                                                    </p>
-                                                                    <p>
-                                                                        <ol>
-                                                                            <li>
-                                                                                <strong>
-                                                                                    People already on a career path (like website development, app development, video editing) but facing challenges:
-                                                                                </strong>
-                                                                                <ul>
-                                                                                    <li>We'll guide and support you in your specific fields.</li>
-                                                                                    <li>Assist you in troubleshooting and solving problems.</li>
-                                                                                    <li>Connect you with a mentor who specializes in your area.</li>
-                                                                                    <li>Help you find real projects so you can start earning.</li>
-                                                                                </ul>
-                                                                            </li>
-                                                                            <li>
-                                                                                <strong>
-                                                                                    People interested in an IT career but unsure where to start:
-                                                                                </strong>
-                                                                                <ul>
-                                                                                    <li>Let's learn how to create a website.</li>
-                                                                                    <li>Learn CSS, HTML, Basic Javascript, and Python for website building.</li>
-                                                                                    <li>We'll guide you to the best internet resources for fast learning.</li>
-                                                                                    <li>Share tips and tricks for quick learning and problem-solving.</li>
-                                                                                    <li>At the end, we'll create a simple dynamic website using what we've learned.</li>
-                                                                                </ul>
-                                                                            </li>
-                                                                        </ol>
-
-                                                                    <p>
-                                                                        <b> Important note:</b> This is not a classroom program. It's a mentorship where we'll help you find the right courses, videos, and tutorials. You'll need to take your time to practice what you've learned. We'll step in to assist only when you're stuck and unsure how to proceed.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                            <!-- End Skill List Area  -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- resume area End -->
-
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade" id="v-pills-Wordpress" role="tabpanel" aria-labelledby="v-pills-wordpress-tab">
-                                        <!-- Start Portfolio Area -->
-                                        <div class="rn-portfolio-area" id="portfolio">
-                                            <div class="container personal-experience-inner">
-                                                <div class="row mt--10 mt_md--10 mt_sm--10 mt-dec-30">
-                                                    <div class="col-lg-12 col-md-12 col-12">
-                                                        <div class="content">
-                                                            <h4 class="maintitle">
-                                                                How to join the mentorship program:
-                                                            </h4>
-                                                            <p>
-                                                                <blockquote>
-                                                                    People who succeed in life are disciplined and dedicated to their goals and never lose sight of what they want to achieve in life.
-                                                                </blockquote>
-                                                            </p>
-                                                            <p>To join the mentorship program, here's what you can do:</p>
-                                                            <ol>
-                                                                <li>
-
-                                                                    <strong>
-                                                                        Follow me on <a href="https://www.instagram.com/dewanganlakhan/" target="_blank" class="color-body-white">
-                                                                            Instagram.
-                                                                        </a>
-                                                                    </strong> <br />  I'll share links to videos and courses for you to learn from.
-
-
-                                                                </li>
-
-                                                                <li>
-
-                                                                    <strong>Send me a message every day on Instagram/WhatsApp/Telegram for at least 15 days.</strong>
-                                                                    <br />Tell me about what you're learning and how you're progressing.
-
-                                                                </li>
-                                                                <li>
-
-                                                                    <strong>Based on your progress and dedication, I'll choose you and add you to our WhatsApp group.</strong>
-                                                                    <br />In this group, we'll continue learning and trying new things to reach our goals.
-
-                                                                </li>
-                                                                <li>
-
-                                                                    <strong>Important Note:</strong>
-                                                                    <br />Even though my mentorship is free and doesn't cost anything, I'd appreciate a kind donation.
-                                                                    The money we collect will be used for a good cause to help the public.
-                                                                    I'm asking for this so that you take our time and effort seriously, as <b>nobody values things that are completely free.</b>
-
-                                                                </li>
-                                                            </ol>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End portfolio Area -->
-                                    </div>
-
-                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tabs">
-                                        <!-- Start News Area -->
-                                        <div class="rn-blog-area" id="blog">
-                                            <div class="container">
-                                                <div class="row mt-dec-30">
-
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- ENd Mews Area -->
-                                    </div>
-
-                                    <div class="tab-pane fade" id="v-pills-python" role="tabpanel" aria-labelledby="v-pills-python-tabs">
-                                        <!-- Start Contact section -->
-                                        <div class="rn-contact-area" id="contacts">
-                                            <div class="container">
-                                                <div class="row mt-dec-30">
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
-                                                        <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
-                                                            <div class="inner">
-                                                                <div class="thumbnail">
-                                                                    <a href="javascript:void(0)">
-                                                                        <img src="./assets/user.png" alt="Your Image Here">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="content">
-                                                                    <div class="category-info">
-                                                                        <div class="category-list">
-                                                                            <a href="javascript:void(0)">Location</a>
-                                                                        </div>
-                                                                        <div class="meta">
-                                                                            <span>
-                                                                                Date
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <h4 class="title">
-                                                                        <a href="javascript:void(0)">
-                                                                            Your Name Here
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
-                                                        <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
-                                                            <div class="inner">
-                                                                <div class="thumbnail">
-                                                                    <a href="javascript:void(0)">
-                                                                        <img src="./assets/user.png" alt="Your Image Here">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="content">
-                                                                    <div class="category-info">
-                                                                        <div class="category-list">
-                                                                            <a href="javascript:void(0)">Location</a>
-                                                                        </div>
-                                                                        <div class="meta">
-                                                                            <span>
-                                                                                Date
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <h4 class="title">
-                                                                        <a href="javascript:void(0)">
-                                                                            Your Name Here
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" class="col-lg-6 col-xl-4 mt--30 col-md-6 col-sm-12 col-12 mt--30">
-                                                        <div class="rn-blog" data-bs-toggle="modal" data-bs-target="#exampleModalCenters">
-                                                            <div class="inner">
-                                                                <div class="thumbnail">
-                                                                    <a href="javascript:void(0)">
-                                                                        <img src="./assets/user.png" alt="Your Image Here">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="content">
-                                                                    <div class="category-info">
-                                                                        <div class="category-list">
-                                                                            <a href="javascript:void(0)">Location</a>
-                                                                        </div>
-                                                                        <div class="meta">
-                                                                            <span>
-                                                                                Date
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <h4 class="title">
-                                                                        <a href="javascript:void(0)">
-                                                                            Your Name Here
-                                                                        </a>
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Contuct section -->
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Start Footer Area -->
-        <div class="rn-footer-area rn-section-gap">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-area text-center">
-
-                            <!--<div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/images/logo/logo-vertical-dark.png" alt="logo">
-                                </a>
-                            </div>-->
-
-                            <p class="description mt--30">&copy; 2025. All rights reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Area -->
-        <!-- Modal Portfolio Body area Start -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i data-feather="x"></i></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/portfolio/portfolio-04.jpg" alt="slide">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Featured - Design</span> App Design Development.
-                                    </h3>
-                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
-                        </div>
-                        <!-- End of .row Body-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal Portfolio area -->
-        <!-- Back to  top Start -->
-        <div class="backto-top">
-            <div>
-                <i data-feather="arrow-up"></i>
-            </div>
-        </div>
-        <!-- Back to top end -->
-
-
+        <button id="themeToggle" class="ml-4 text-white hover:text-gray-300 transition p-2 rounded-full bg-opacity-30 bg-black dark:bg-white dark:bg-opacity-10">
+          <i data-feather="sun" class="hidden dark:block"></i>
+          <i data-feather="moon" class="block dark:hidden"></i>
+        </button>
+      </div>
+      <img src="https://lakhandewangan.com/assets/lakhan1.jpg" alt="Lakhan Dewangan" class="w-32 h-32 rounded-full mt-4 md:mt-0 border-4 border-white shadow-lg object-cover" />
     </div>
+  </header>
 
+  <!-- Contact Info -->
+  <section class="p-6">
+    <div class="container mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="dark:bg-surface-dark bg-surface-light dark:text-text-dark text-text-light p-4 rounded-lg shadow flex items-center gap-2">
+        <i data-feather="mail" class="text-accent-dark dark:text-accent-light"></i><strong>Email:</strong> dewanganlakhan@gmail.com
+      </div>
+      <div class="dark:bg-surface-dark bg-surface-light dark:text-text-dark text-text-light p-4 rounded-lg shadow flex items-center gap-2">
+        <i data-feather="message-circle" class="text-accent-dark dark:text-accent-light"></i><strong>Telegram:</strong> lakhandewangan
+      </div>
+      <div class="dark:bg-surface-dark bg-surface-light dark:text-text-dark text-text-light p-4 rounded-lg shadow flex items-center gap-2">
+        <i data-feather="gift" class="text-accent-dark dark:text-accent-light"></i><strong>Birthday:</strong> 07 June
+      </div>
+      <div class="dark:bg-surface-dark bg-surface-light dark:text-text-dark text-text-light p-4 rounded-lg shadow flex items-center gap-2">
+        <i data-feather="map-pin" class="text-accent-dark dark:text-accent-light"></i><strong>Location:</strong> Bilaspur, C.G., India
+      </div>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section class="p-6 dark:bg-surface-dark bg-gray-100 rounded-xl shadow mx-4">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold dark:text-text-dark text-text-light mb-4">About Me</h2>
+      <p class="mb-4">I'm a software engineer running a small company called <strong>Criptocode IT Solutions</strong> in Bilaspur, Chhattisgarh, India.</p>
+      <p class="mb-4">Learning and implementing Generative AI and Retrieval-Augmented Generation (RAG) applications to solve real-world problems.</p>
+      <p class="mb-4">India was the leader in Call Centers followed by IT services. Now it's going to be a Software Hub.</p>
+      <p class="mb-4">My mission is to mentor 100 students in web development for free.</p>
+    </div>
+  </section>
 
+  <!-- How I Help -->
+  <section class="p-6 mt-6 dark:bg-secondary-dark bg-primary-light bg-opacity-90 dark:text-text-dark text-white rounded-xl shadow mx-4">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold mb-4">Here's how I can help you:</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li>I'll share links to useful YouTube courses and tutorials.</li>
+        <li>I'll give you tips, tricks, and hacks for quick learning and problem-solving.</li>
+        <li>You'll work on real projects for hands-on experience, helping you gain confidence.</li>
+        <li>To join, follow me on Instagram.</li>
+      </ul>
+    </div>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/feather.min.js"></script>
-    <script src="assets/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/text-type.js"></script>
-    <script src="assets/wow.js"></script>
-    <script src="assets/aos.js"></script>
-    <script src="assets/particles.js"></script>
-    <script src="assets/jquery-one-page-nav.js"></script>
-    <!-- main JS -->
-    <script src="assets/main.js"></script>
+  <!-- Mission & Vision -->
+  <section class="p-6 dark:bg-surface-dark bg-gray-100 mt-6 rounded-xl shadow mx-4">
+    <div class="container mx-auto max-w-5xl grid md:grid-cols-2 gap-6">
+      <div class="dark:bg-secondary-dark bg-accent-light p-4 rounded-lg shadow text-white">
+        <h3 class="text-xl font-semibold mb-2">Mission</h3>
+        <p>On a mission to successfully transform the careers of 100 students through mentorship.</p>
+      </div>
+      <div class="dark:bg-secondary-dark bg-accent-light p-4 rounded-lg shadow text-white">
+        <h3 class="text-xl font-semibold mb-2">Vision</h3>
+        <p>Every college student must know how to create a simple website.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="p-6 dark:bg-background-dark bg-background-light mt-6 rounded-xl shadow mx-4">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold dark:text-text-dark text-text-light mb-4">AI & Modern Tech Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-lg shadow text-center hover:transform hover:scale-105 transition-transform">
+          <i data-feather="cpu" class="mx-auto mb-2 text-accent-dark dark:text-accent-light"></i>
+          <h3 class="font-semibold dark:text-text-dark text-text-light">GenAI</h3>
+        </div>
+        <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-lg shadow text-center hover:transform hover:scale-105 transition-transform">
+          <i data-feather="book-open" class="mx-auto mb-2 text-accent-dark dark:text-accent-light"></i>
+          <h3 class="font-semibold dark:text-text-dark text-text-light">RAG</h3>
+        </div>
+        <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-lg shadow text-center hover:transform hover:scale-105 transition-transform">
+          <i data-feather="database" class="mx-auto mb-2 text-accent-dark dark:text-accent-light"></i>
+          <h3 class="font-semibold dark:text-text-dark text-text-light">QdrantDB</h3>
+        </div>
+        <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-lg shadow text-center hover:transform hover:scale-105 transition-transform">
+          <i data-feather="trending-up" class="mx-auto mb-2 text-accent-dark dark:text-accent-light"></i>
+          <h3 class="font-semibold dark:text-text-dark text-text-light">LangChain</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-primary-dark bg-primary-light text-white p-4 text-center mt-8 rounded-t-xl">
+    <div class="container mx-auto max-w-5xl">
+      &copy; 2025 Lakhan Dewangan · Criptocode IT Solutions
+    </div>
+  </footer>
+
+  <script>
+    feather.replace();
+    
+    // Theme toggle functionality
+    document.getElementById('themeToggle').addEventListener('click', function() {
+      if (document.documentElement.classList.contains('dark')) {
+        // Switch to light mode
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+        // Switch to dark mode
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      }
+      
+      // Update icons
+      feather.replace();
+    });
+  </script>
+
 </body>
 </html>
