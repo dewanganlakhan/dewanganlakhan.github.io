@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Lakhan Dewangan | Portfolio",
+  description = "Lakhan Dewangan's Personal Portfolio - GenAI Developer & RAG Specialist" 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" />
+  
+  <script is:inline>
+    // Inline script to prevent FOUC (Flash of Unstyled Content) on dark mode
+    function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    }
+    initTheme();
+  </script>
+</head>
+<body class="font-sans transition-all duration-300">
+  
+  <slot />
+
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script is:inline>
+    // Call feather.replace() on load
+    window.addEventListener('DOMContentLoaded', () => {
+      if (typeof feather !== 'undefined') {
+        feather.replace();
+      }
+    });
+
+    // Theme toggle functionality
+    window.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('themeToggle');
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+          } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+          }
+          if (typeof feather !== 'undefined') {
+            feather.replace();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

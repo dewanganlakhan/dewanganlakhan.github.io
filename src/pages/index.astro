@@ -1,80 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lakhan Dewangan | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            // Modern color palette
-            primary: {
-              light: '#6366f1', // Indigo-500
-              dark: '#312e81'   // Indigo-900
-            },
-            secondary: {
-              light: '#a5b4fc', // Indigo-300
-              dark: '#4338ca'   // Indigo-700
-            },
-            background: {
-              light: '#f9fafb', // Gray-50
-              dark: '#0f172a'   // Slate-900
-            },
-            surface: {
-              light: '#ffffff', // White
-              dark: '#1e293b'   // Slate-800
-            },
-            text: {
-              light: '#1f2937', // Gray-800
-              dark: '#f8fafc'   // Slate-50
-            },
-            accent: {
-              light: '#8b5cf6', // Violet-500
-              dark: '#7c3aed'   // Violet-600
-            }
-          }
-        }
-      }
-    }
-    
-    // Function to initialize theme based on system preference or saved preference
-    function initTheme() {
-      // Check for saved preference
-      const savedTheme = localStorage.getItem('theme');
-      
-      if (savedTheme === 'light') {
-        document.documentElement.classList.remove('dark');
-      } else {
-        document.documentElement.classList.add('dark');
-      }
-    }
-    
-    // Call initialization on page load
-    window.addEventListener('DOMContentLoaded', initTheme);
-  </script>
-  <style>
-    .dark body {
-      background-color: #0f172a;
-      color: #f8fafc;
-    }
-    
-    body {
-      background-color: #f9fafb;
-      color: #1f2937;
-    }
-    
-    .transition-all {
-      transition: all 0.3s ease;
-    }
-  </style>
-</head>
-<body class="font-sans transition-all duration-300">
+---
+import Layout from '../layouts/Layout.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+---
 
+<Layout>
   <!-- Header with Theme Toggle -->
   <header class="dark:bg-primary-dark bg-primary-light text-white p-6 rounded-b-xl shadow-lg">
     <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between">
@@ -83,12 +12,9 @@
           <h1 class="text-3xl font-bold">Lakhan Dewangan</h1>
           <p class="text-lg">GenAI Developer · RAG Specialist</p>
         </div>
-        <button id="themeToggle" class="ml-4 text-white hover:text-gray-300 transition p-2 rounded-full bg-opacity-30 bg-black dark:bg-white dark:bg-opacity-10">
-          <i data-feather="sun" class="hidden dark:block"></i>
-          <i data-feather="moon" class="block dark:hidden"></i>
-        </button>
+        <ThemeToggle />
       </div>
-      <img src="https://lakhandewangan.com/assets/lakhan1.jpg" alt="Lakhan Dewangan" class="w-32 h-32 rounded-full mt-4 md:mt-0 border-4 border-white shadow-lg object-cover" />
+      <img src="/assets/lakhan1.jpg" alt="Lakhan Dewangan" class="w-32 h-32 rounded-full mt-4 md:mt-0 border-4 border-white shadow-lg object-cover" />
     </div>
   </header>
 
@@ -185,26 +111,4 @@
       &copy; 2026 Lakhan Dewangan · Criptocode IT Solutions
     </div>
   </footer>
-
-  <script>
-    feather.replace();
-    
-    // Theme toggle functionality
-    document.getElementById('themeToggle').addEventListener('click', function() {
-      if (document.documentElement.classList.contains('dark')) {
-        // Switch to light mode
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      } else {
-        // Switch to dark mode
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      }
-      
-      // Update icons
-      feather.replace();
-    });
-  </script>
-
-</body>
-</html>
+</Layout>
