@@ -1,6 +1,8 @@
 ---
+import FeatherIcon from './FeatherIcon.astro';
 ---
 <button id="themeToggle" class="ml-4 text-white hover:text-white/80 transition p-2 rounded-full bg-black/30 dark:bg-white/10" aria-label="Toggle theme">
-  <i data-feather="sun" class="hidden dark:block"></i>
-  <i data-feather="moon" class="block dark:hidden"></i>
+  <FeatherIcon name="sun" class="hidden dark:block" />
+  <FeatherIcon name="moon" class="block dark:hidden" />
 </button>
+
