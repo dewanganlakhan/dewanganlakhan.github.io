@@ -40,12 +40,13 @@ import FeatherIcon from '../components/FeatherIcon.astro';
           <span>Support & FAQ</span>
         </a>
         <a 
-          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
-          download="instant-kw-extension-v1.0.0.zip"
+          href="https://chromewebstore.google.com/detail/instant-kw-google-autocom/hbpogodbnfedlaofnjonjnbckjofkfgg" 
+          target="_blank" 
+          rel="noopener noreferrer"
           class="bg-accent-light dark:bg-accent-dark hover:brightness-110 text-white font-medium px-4 py-2 rounded-lg shadow inline-flex items-center gap-2 text-sm transition-all transform hover:-translate-y-0.5"
         >
-          <FeatherIcon name="download" class="w-4 h-4" />
-          <span>Download (.zip)</span>
+          <FeatherIcon name="external-link" class="w-4 h-4" />
+          <span>Add to Chrome</span>
         </a>
         <ThemeToggle />
       </div>
@@ -59,10 +60,11 @@ import FeatherIcon from '../components/FeatherIcon.astro';
         <div class="flex items-center gap-2">
           <span class="bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-800 flex items-center gap-1.5">
             <FeatherIcon name="zap" class="w-3.5 h-3.5 text-indigo-500" />
-            Manifest V3 Chrome Extension
+            Manifest V3 Extension
           </span>
-          <span class="bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
-            v1.0.0 Free
+          <span class="bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800 flex items-center gap-1">
+            <FeatherIcon name="check-circle" class="w-3.5 h-3.5 text-emerald-500" />
+            Live on Chrome Web Store
           </span>
         </div>
         <div class="text-xs text-gray-500 dark:text-gray-400">
@@ -95,19 +97,21 @@ import FeatherIcon from '../components/FeatherIcon.astro';
       <!-- Action Buttons -->
       <div class="flex flex-wrap items-center gap-4">
         <a 
-          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
-          download="instant-kw-extension-v1.0.0.zip"
+          href="https://chromewebstore.google.com/detail/instant-kw-google-autocom/hbpogodbnfedlaofnjonjnbckjofkfgg" 
+          target="_blank"
+          rel="noopener noreferrer"
           class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 text-base transition-all transform hover:-translate-y-0.5"
         >
-          <FeatherIcon name="download" class="w-5 h-5" />
-          <span>Download Free Zip (v1.0.0)</span>
+          <FeatherIcon name="external-link" class="w-5 h-5" />
+          <span>Add to Chrome (Free)</span>
         </a>
         <a 
-          href="#installation" 
+          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
+          download="instant-kw-extension-v1.0.0.zip"
           class="dark:bg-gray-800 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-semibold px-6 py-3 rounded-xl shadow border border-gray-300 dark:border-gray-700 flex items-center gap-2 text-base transition-all"
         >
-          <FeatherIcon name="terminal" class="w-5 h-5" />
-          <span>Installation Guide</span>
+          <FeatherIcon name="download" class="w-5 h-5" />
+          <span>Download Zip Bundle</span>
         </a>
       </div>
     </div>
