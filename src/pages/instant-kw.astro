@@ -1,0 +1,394 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ThemeToggle from '../components/ThemeToggle.astro';
+import FeatherIcon from '../components/FeatherIcon.astro';
+---
+
+<Layout 
+  title="Instant KW - Google Autocomplete & Wildcard Harvester Chrome Extension"
+  description="Instant KW is a Chrome Extension built to harvest Google Autocomplete suggestions across deep L1 & L2 wildcard variations with 1-click CSV export."
+>
+  <!-- Navigation Header -->
+  <header class="dark:bg-primary-dark bg-primary-light text-white p-6 rounded-b-xl shadow-lg">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <a href="/" class="flex items-center gap-2 hover:opacity-80 transition-opacity text-sm font-medium bg-white/10 px-3 py-1.5 rounded-lg">
+          <FeatherIcon name="arrow-left" class="w-4 h-4 text-white" />
+          <span>Back to Portfolio</span>
+        </a>
+        <span class="text-white/40">|</span>
+        <div class="flex items-center gap-3">
+          <img 
+            src="/assets/instant-kw/icon128.png" 
+            alt="Instant KW Icon" 
+            class="w-10 h-10 rounded-lg shadow object-contain bg-white/10 p-1" 
+            width="40" 
+            height="40" 
+          />
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold leading-tight">Instant KW</h1>
+            <p class="text-xs md:text-sm text-indigo-200">Google Autocomplete & Wildcard Harvester</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a 
+          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
+          download="instant-kw-extension-v1.0.0.zip"
+          class="bg-accent-light dark:bg-accent-dark hover:brightness-110 text-white font-medium px-4 py-2 rounded-lg shadow inline-flex items-center gap-2 text-sm transition-all transform hover:-translate-y-0.5"
+        >
+          <FeatherIcon name="download" class="w-4 h-4" />
+          <span>Download Extension (.zip)</span>
+        </a>
+        <ThemeToggle />
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="p-6 md:p-10 max-w-5xl mx-auto">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div class="flex items-center gap-2">
+          <span class="bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-800 flex items-center gap-1.5">
+            <FeatherIcon name="zap" class="w-3.5 h-3.5 text-indigo-500" />
+            Manifest V3 Chrome Extension
+          </span>
+          <span class="bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200 dark:border-emerald-800">
+            v1.0.0 Free
+          </span>
+        </div>
+        <div class="text-xs text-gray-500 dark:text-gray-400">
+          Created by <a href="https://lakhandewangan.com" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Lakhan Dewangan</a>
+        </div>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 leading-tight">
+        Uncover Hidden Google Search Queries & Long-Tail Keywords Instantly
+      </h2>
+      
+      <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
+        Instant KW automates Google Instant search suggestions harvesting across prefix, suffix, question, intent, and 
+        <strong>Deep Level 2 inner wildcard (<code class="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-indigo-600 dark:text-indigo-400 font-mono text-sm">*</code>) expansions</strong>. 
+        Export organized CSV datasets per keyword with position ranking intelligence.
+      </p>
+
+      <!-- Banner Image -->
+      <div class="relative rounded-xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 bg-gray-900 mb-8 aspect-[1400/560]">
+        <img 
+          src="/assets/instant-kw/marquee_promo_tile.png" 
+          alt="Instant KW Banner - Google Autocomplete & Wildcard Harvester" 
+          class="w-full h-full object-cover" 
+          width="1400" 
+          height="560"
+          loading="eager"
+        />
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-wrap items-center gap-4">
+        <a 
+          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
+          download="instant-kw-extension-v1.0.0.zip"
+          class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 text-base transition-all transform hover:-translate-y-0.5"
+        >
+          <FeatherIcon name="download" class="w-5 h-5" />
+          <span>Download Free Zip (v1.0.0)</span>
+        </a>
+        <a 
+          href="#installation" 
+          class="dark:bg-gray-800 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white font-semibold px-6 py-3 rounded-xl shadow border border-gray-300 dark:border-gray-700 flex items-center gap-2 text-base transition-all"
+        >
+          <FeatherIcon name="terminal" class="w-5 h-5" />
+          <span>Installation Guide</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Grid -->
+  <section class="p-6 max-w-5xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">Key Features</h2>
+      <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        Everything you need for rapid keyword discovery and long-tail SEO research direct from Google.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Feature 1 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-4">
+          <FeatherIcon name="search" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Google Autocomplete Stream</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          High-speed direct API harvesting with customizable rate pacing and optional live visual Google Search tab automation.
+        </p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-4">
+          <FeatherIcon name="layers" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Level 1 Wildcard Variations</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Harvests exact seed, prefix/suffix wildcards (<code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-purple-600 dark:text-purple-400 font-mono">* kw</code>, <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-purple-600 dark:text-purple-400 font-mono">kw *</code>), alphabets (a-z), numbers (0-9), questions, and intent modifiers.
+        </p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-4">
+          <FeatherIcon name="zap" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">⚡ Deep Level 2 L2 Wildcards</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Executes inner wildcard searches for every Level 1 suggestion found, discovering hidden sub-queries competitors miss.
+        </p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center text-amber-600 dark:text-amber-400 mb-4">
+          <FeatherIcon name="cpu" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Keyword Studio Workspace</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Full-page interactive dashboard (<code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-amber-600 dark:text-amber-400 font-mono">dashboard.html</code>) to filter categories, search keywords, and inspect ranking positions.
+        </p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-4">
+          <FeatherIcon name="file-text" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">1-Click & Bulk CSV Exports</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Export 1 clean CSV per seed keyword, trigger bulk CSV downloads for all harvested projects, or copy clean text lists to clipboard.
+        </p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-6 rounded-xl border border-gray-200 dark:border-gray-800 shadow hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-lg bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center text-rose-600 dark:text-rose-400 mb-4">
+          <FeatherIcon name="shield" class="w-6 h-6" />
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Privacy & Local Storage</h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          100% private execution. All harvested data stays inside your browser's <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-rose-600 dark:text-rose-400 font-mono">chrome.storage.local</code>. Zero external servers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Gallery -->
+  <section class="p-6 max-w-5xl mx-auto mt-6">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">Interface Preview & Showcase</h2>
+      <p class="text-gray-600 dark:text-gray-400">Explore the extension popup, deep wildcard engine, and full Studio dashboard.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Screenshot 1 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow flex flex-col">
+        <div class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-950 aspect-[4/3] mb-3">
+          <img 
+            src="/assets/instant-kw/screenshot_popup.jpg" 
+            alt="Instant KW Live Harvester Popup" 
+            class="w-full h-full object-cover" 
+            width="800" 
+            height="600" 
+            loading="lazy" 
+          />
+        </div>
+        <h4 class="font-semibold text-gray-900 dark:text-white text-base">Live Harvester Popup</h4>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          Real-time harvesting feed, speed control, category toggles, and instant status updates.
+        </p>
+      </div>
+
+      <!-- Screenshot 2 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow flex flex-col">
+        <div class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-950 aspect-[4/3] mb-3">
+          <img 
+            src="/assets/instant-kw/screenshot_dashboard.jpg" 
+            alt="Instant KW Keyword Studio Dashboard" 
+            class="w-full h-full object-cover" 
+            width="800" 
+            height="600" 
+            loading="lazy" 
+          />
+        </div>
+        <h4 class="font-semibold text-gray-900 dark:text-white text-base">Keyword Studio Dashboard</h4>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          Full workspace view with category filtering, search, metrics, and project history management.
+        </p>
+      </div>
+
+      <!-- Screenshot 3 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow flex flex-col">
+        <div class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-950 aspect-[4/3] mb-3">
+          <img 
+            src="/assets/instant-kw/screenshot_deep_l2.jpg" 
+            alt="Instant KW Deep L2 Inner Wildcards" 
+            class="w-full h-full object-cover" 
+            width="800" 
+            height="600" 
+            loading="lazy" 
+          />
+        </div>
+        <h4 class="font-semibold text-gray-900 dark:text-white text-base">Deep L2 Inner Wildcard Engine</h4>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          Uncovers deep inner wildcards for suggestions found at Level 1.
+        </p>
+      </div>
+
+      <!-- Screenshot 4 -->
+      <div class="dark:bg-surface-dark bg-surface-light p-4 rounded-xl border border-gray-200 dark:border-gray-800 shadow flex flex-col">
+        <div class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-950 aspect-[4/3] mb-3">
+          <img 
+            src="/assets/instant-kw/screenshot_csv.jpg" 
+            alt="Instant KW CSV Export Format" 
+            class="w-full h-full object-cover" 
+            width="800" 
+            height="600" 
+            loading="lazy" 
+          />
+        </div>
+        <h4 class="font-semibold text-gray-900 dark:text-white text-base">Structured CSV Export Intelligence</h4>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">
+          Formatted CSV files containing Seed Keyword, Suggestion, Wildcard Pattern, Search Depth, Parent Suggestion, and Rank Position.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CSV Output Structure Table -->
+  <section class="p-6 max-w-5xl mx-auto mt-6">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+        <FeatherIcon name="file-text" class="w-6 h-6 text-indigo-500" />
+        <span>CSV Export Intelligence Schema</span>
+      </h3>
+      <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+        Each CSV file downloaded from Instant KW contains structured data ready for import into Excel, Google Sheets, or python SEO processing scripts:
+      </p>
+
+      <div class="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700">
+        <table class="w-full text-left text-xs md:text-sm text-gray-700 dark:text-gray-300">
+          <thead class="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white uppercase text-[11px] tracking-wider font-semibold">
+            <tr>
+              <th class="p-3 border-b border-gray-200 dark:border-gray-700">Column Header</th>
+              <th class="p-3 border-b border-gray-200 dark:border-gray-700">Description</th>
+              <th class="p-3 border-b border-gray-200 dark:border-gray-700">Example Value</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 dark:divide-gray-800 font-mono">
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Seed Keyword</td>
+              <td class="p-3 font-sans">The primary root keyword entered for harvesting.</td>
+              <td class="p-3 text-gray-500">running shoes</td>
+            </tr>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Suggested Keyword</td>
+              <td class="p-3 font-sans">The actual autocomplete phrase returned by Google.</td>
+              <td class="p-3 text-gray-500">best running shoes for flat feet</td>
+            </tr>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Wildcard / Query Pattern</td>
+              <td class="p-3 font-sans">The query string variation executed to get the suggestion.</td>
+              <td class="p-3 text-gray-500">best running shoes</td>
+            </tr>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Pattern Type</td>
+              <td class="p-3 font-sans">Category type (Modifier Prefix, Alphabet Suffix, Question, Deep L2).</td>
+              <td class="p-3 text-gray-500">Modifier Prefix (best)</td>
+            </tr>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Search Depth</td>
+              <td class="p-3 font-sans">Depth level of harvesting.</td>
+              <td class="p-3 text-gray-500">Level 1 / Level 2</td>
+            </tr>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-800/50">
+              <td class="p-3 font-semibold text-indigo-600 dark:text-indigo-400">Rank Position</td>
+              <td class="p-3 font-sans">1-indexed position in Google's autocomplete dropdown menu.</td>
+              <td class="p-3 text-gray-500">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation Guide -->
+  <section id="installation" class="p-6 max-w-5xl mx-auto mt-6 mb-12">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+        <FeatherIcon name="terminal" class="w-6 h-6 text-emerald-500" />
+        <span>Installation Guide (Google Chrome)</span>
+      </h3>
+      
+      <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+        You can easily load and run Instant KW in Google Chrome in under 60 seconds:
+      </p>
+
+      <ol class="space-y-4 text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed">
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">1</span>
+          <div>
+            <strong>Download the Zip Bundle:</strong> Click 
+            <a href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" download class="text-indigo-600 dark:text-indigo-400 underline font-semibold">
+              download instant-kw-extension-v1.0.0.zip
+            </a> 
+            and extract it into a folder on your computer.
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">2</span>
+          <div>
+            <strong>Open Chrome Extensions:</strong> Open Google Chrome and navigate to <code class="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded text-indigo-600 dark:text-indigo-400 font-mono text-sm">chrome://extensions/</code> in your address bar.
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">3</span>
+          <div>
+            <strong>Enable Developer Mode:</strong> Toggle the <strong>Developer mode</strong> switch in the top-right corner of the Extensions page.
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-7 h-7 rounded-full bg-indigo-600 text-white font-bold text-xs flex items-center justify-center">4</span>
+          <div>
+            <strong>Load Unpacked Extension:</strong> Click the <strong>Load unpacked</strong> button and select the extracted folder.
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="flex-shrink-0 w-7 h-7 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center">
+            <FeatherIcon name="check-circle" class="w-4 h-4 text-white" />
+          </span>
+          <div>
+            <strong>Ready to Harvest!</strong> Click the Instant KW icon in your Chrome toolbar, enter your seed keyword, and click <strong>Start Harvester</strong>.
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-primary-dark bg-primary-light text-white p-6 text-center rounded-t-xl">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div>
+        &copy; 2026 Lakhan Dewangan · Instant KW Extension
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/" class="hover:underline">Portfolio Home</a>
+        <span>·</span>
+        <a href="https://github.com/dewanganlakhan" class="hover:underline">GitHub</a>
+        <span>·</span>
+        <a href="https://x.com/dewanganlakhan" class="hover:underline">Twitter</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
