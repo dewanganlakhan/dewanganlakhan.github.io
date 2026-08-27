@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import FeatherIcon from '../../components/FeatherIcon.astro';
+---
+
+<Layout 
+  title="Instant KW Privacy Policy | Lakhan Dewangan"
+  description="Official Privacy Policy for Instant KW Google Autocomplete & Wildcard Harvester Chrome Extension."
+>
+  <!-- Header -->
+  <header class="dark:bg-primary-dark bg-primary-light text-white p-6 rounded-b-xl shadow-lg">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <a href="/instant-kw" class="flex items-center gap-2 hover:opacity-80 transition-opacity text-sm font-medium bg-white/10 px-3 py-1.5 rounded-lg">
+          <FeatherIcon name="arrow-left" class="w-4 h-4 text-white" />
+          <span>Back to Instant KW</span>
+        </a>
+        <span class="text-white/40">|</span>
+        <div class="flex items-center gap-3">
+          <img 
+            src="/assets/instant-kw/icon128.png" 
+            alt="Instant KW Icon" 
+            class="w-10 h-10 rounded-lg shadow object-contain bg-white/10 p-1" 
+            width="40" 
+            height="40" 
+          />
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold leading-tight">Instant KW Privacy Policy</h1>
+            <p class="text-xs md:text-sm text-indigo-200">Manifest V3 Data Protection & Privacy Terms</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="/instant-kw/support" class="bg-white/10 hover:bg-white/20 text-white font-medium px-3.5 py-1.5 rounded-lg text-sm transition-colors">
+          Support Portal
+        </a>
+        <ThemeToggle />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="p-6 md:p-10 max-w-4xl mx-auto">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <div class="text-xs text-gray-500 dark:text-gray-400 mb-6">
+        Last updated: August 27, 2026 · Developer: <strong>Lakhan Dewangan</strong>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">1. Overview</h2>
+      <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+        <strong>Instant KW - Google Autocomplete & Wildcard Harvester</strong> ("Extension") is committed to protecting your privacy. This Privacy Policy explains our practices regarding user data and permission disclosures for the Chrome Web Store.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">2. Information We Collect and How It Is Used</h2>
+      <ul class="list-disc list-inside space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+        <li><strong>No Personal Data Collection:</strong> The Extension does NOT collect, transmit, track, or sell any personally identifiable information (PII), browsing history, IP addresses, or user credentials.</li>
+        <li><strong>Local Storage Only:</strong> All seed keywords entered and suggestions returned from Google Autocomplete are stored exclusively on your local computer using the browser's <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-indigo-600 dark:text-indigo-400 font-mono text-xs">chrome.storage.local</code> API.</li>
+        <li><strong>No Remote Server Transmission:</strong> None of your stored keywords, project histories, or exported CSV files are ever transmitted to external servers, third-party analytics platforms, or developers.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">3. Permissions Explanation</h2>
+      <div class="space-y-3 text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">storage</strong>: To store keyword projects locally on your computer so you can access them in history and the Keyword Studio dashboard.
+        </div>
+        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">downloads</strong>: To allow you to download CSV files of your harvested keywords directly to your local downloads folder.
+        </div>
+        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">tabs / activeTab / scripting</strong>: To open the Keyword Studio dashboard tab in your browser and provide optional fallback suggestion harvesting.
+        </div>
+        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">Host Permissions (*://suggestqueries.google.com/*, *://*.google.com/*)</strong>: To fetch real-time search suggestions from Google's public autocomplete API on your behalf.
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">4. Single Purpose Declaration</h2>
+      <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+        The sole purpose of this Extension is to assist users in keyword research by harvesting Google Autocomplete suggestions and wildcard variations and exporting them to CSV format.
+      </p>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">5. Contact & Support</h2>
+      <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+        If you have questions regarding this Privacy Policy, please visit our <a href="/instant-kw/support" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">Support Portal</a> or contact developer Lakhan Dewangan at <a href="mailto:dewanganlakhan@gmail.com" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">dewanganlakhan@gmail.com</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-primary-dark bg-primary-light text-white p-6 text-center rounded-t-xl mt-8">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div>
+        &copy; 2026 Lakhan Dewangan · Instant KW Privacy Policy
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/instant-kw" class="hover:underline">Instant KW Landing Page</a>
+        <span>·</span>
+        <a href="/instant-kw/support" class="hover:underline">Support Portal</a>
+        <span>·</span>
+        <a href="/" class="hover:underline">Portfolio Home</a>
+      </div>
+    </div>
+  </footer>
+</Layout>

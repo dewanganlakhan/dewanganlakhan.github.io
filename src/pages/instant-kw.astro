@@ -33,12 +33,19 @@ import FeatherIcon from '../components/FeatherIcon.astro';
       </div>
       <div class="flex items-center gap-3">
         <a 
+          href="/instant-kw/support" 
+          class="bg-white/10 hover:bg-white/20 text-white font-medium px-3.5 py-2 rounded-lg text-sm transition-colors flex items-center gap-1.5"
+        >
+          <FeatherIcon name="shield" class="w-4 h-4" />
+          <span>Support & FAQ</span>
+        </a>
+        <a 
           href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
           download="instant-kw-extension-v1.0.0.zip"
           class="bg-accent-light dark:bg-accent-dark hover:brightness-110 text-white font-medium px-4 py-2 rounded-lg shadow inline-flex items-center gap-2 text-sm transition-all transform hover:-translate-y-0.5"
         >
           <FeatherIcon name="download" class="w-4 h-4" />
-          <span>Download Extension (.zip)</span>
+          <span>Download (.zip)</span>
         </a>
         <ThemeToggle />
       </div>
@@ -385,9 +392,11 @@ import FeatherIcon from '../components/FeatherIcon.astro';
       <div class="flex items-center gap-4">
         <a href="/" class="hover:underline">Portfolio Home</a>
         <span>·</span>
-        <a href="https://github.com/dewanganlakhan" class="hover:underline">GitHub</a>
+        <a href="/instant-kw/support" class="hover:underline font-semibold">Support Portal</a>
         <span>·</span>
-        <a href="https://x.com/dewanganlakhan" class="hover:underline">Twitter</a>
+        <a href="/instant-kw/privacy" class="hover:underline">Privacy Policy</a>
+        <span>·</span>
+        <a href="https://github.com/dewanganlakhan" class="hover:underline">GitHub</a>
       </div>
     </div>
   </footer>

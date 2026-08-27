@@ -1,0 +1,251 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ThemeToggle from '../../components/ThemeToggle.astro';
+import FeatherIcon from '../../components/FeatherIcon.astro';
+---
+
+<Layout 
+  title="Instant KW Support & Help Center | Lakhan Dewangan"
+  description="Official support page for Instant KW Google Autocomplete & Wildcard Harvester Chrome Extension. Get help, view FAQs, troubleshoot issues, and contact Lakhan Dewangan."
+>
+  <!-- Header -->
+  <header class="dark:bg-primary-dark bg-primary-light text-white p-6 rounded-b-xl shadow-lg">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <a href="/instant-kw" class="flex items-center gap-2 hover:opacity-80 transition-opacity text-sm font-medium bg-white/10 px-3 py-1.5 rounded-lg">
+          <FeatherIcon name="arrow-left" class="w-4 h-4 text-white" />
+          <span>Back to Instant KW</span>
+        </a>
+        <span class="text-white/40">|</span>
+        <div class="flex items-center gap-3">
+          <img 
+            src="/assets/instant-kw/icon128.png" 
+            alt="Instant KW Icon" 
+            class="w-10 h-10 rounded-lg shadow object-contain bg-white/10 p-1" 
+            width="40" 
+            height="40" 
+          />
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold leading-tight">Instant KW Support</h1>
+            <p class="text-xs md:text-sm text-indigo-200">Help Center, Troubleshooting & FAQ</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <a 
+          href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" 
+          download="instant-kw-extension-v1.0.0.zip"
+          class="bg-accent-light dark:bg-accent-dark hover:brightness-110 text-white font-medium px-4 py-2 rounded-lg shadow inline-flex items-center gap-2 text-sm transition-all"
+        >
+          <FeatherIcon name="download" class="w-4 h-4" />
+          <span>Download Zip</span>
+        </a>
+        <ThemeToggle />
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="p-6 md:p-10 max-w-5xl mx-auto">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-200 dark:border-indigo-800 flex items-center gap-1.5">
+          <FeatherIcon name="shield" class="w-3.5 h-3.5 text-indigo-500" />
+          Chrome Web Store Support Portal
+        </span>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-gray-900 dark:text-white mb-3">
+        How can we help you with Instant KW?
+      </h2>
+      
+      <p class="text-gray-600 dark:text-gray-300 text-base leading-relaxed mb-6">
+        Welcome to the official support hub for <strong>Instant KW - Google Autocomplete & Wildcard Harvester</strong>. 
+        Below you will find detailed troubleshooting guides, frequently asked questions, permission explanations, and direct developer contact channels.
+      </p>
+
+      <!-- Support Quick Links Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <a href="#faq" class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/60 hover:border-indigo-500 transition-colors flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 flex-shrink-0">
+            <FeatherIcon name="book-open" class="w-5 h-5" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white text-sm">Read FAQs</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Common questions & fixes</p>
+          </div>
+        </a>
+
+        <a href="#contact" class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/60 hover:border-indigo-500 transition-colors flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 flex-shrink-0">
+            <FeatherIcon name="mail" class="w-5 h-5" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white text-sm">Direct Contact</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Email & social support</p>
+          </div>
+        </a>
+
+        <a href="/instant-kw/privacy" class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/60 hover:border-indigo-500 transition-colors flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 flex-shrink-0">
+            <FeatherIcon name="shield" class="w-5 h-5" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-900 dark:text-white text-sm">Privacy Policy</h3>
+            <p class="text-xs text-gray-500 dark:text-gray-400">Data & security rules</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="p-6 max-w-5xl mx-auto">
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Frequently Asked Questions</h2>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">Find quick answers to common questions about Instant KW installation, wildcards, and CSV exports.</p>
+    </div>
+
+    <div class="space-y-4">
+      <!-- Q1 -->
+      <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+          <FeatherIcon name="check-circle" class="w-5 h-5 text-indigo-500" />
+          How do I install the Instant KW Chrome extension?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          1. Download the <a href="/assets/instant-kw/instant-kw-extension-v1.0.0.zip" download class="text-indigo-600 dark:text-indigo-400 underline">zip package</a> and unzip it on your computer.<br/>
+          2. Open Chrome and go to <code class="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded font-mono text-xs">chrome://extensions/</code>.<br/>
+          3. Enable <strong>Developer mode</strong> (top-right toggle).<br/>
+          4. Click <strong>Load unpacked</strong> and select the unzipped extension directory.
+        </p>
+      </div>
+
+      <!-- Q2 -->
+      <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+          <FeatherIcon name="check-circle" class="w-5 h-5 text-indigo-500" />
+          Why does the extension require storage and downloads permissions?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          - <strong>`storage`</strong>: Used to save your keyword projects, search depth configurations, and harvested suggestions locally inside your browser (<code class="bg-gray-100 dark:bg-gray-800 px-1 rounded font-mono text-xs">chrome.storage.local</code>).<br/>
+          - <strong>`downloads`</strong>: Used strictly to allow you to export and save structured CSV keyword files directly to your downloads folder with 1 click.
+        </p>
+      </div>
+
+      <!-- Q3 -->
+      <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+          <FeatherIcon name="check-circle" class="w-5 h-5 text-indigo-500" />
+          What is the Deep Level 2 (L2) Inner Wildcard Harvester?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          Level 1 harvesting queries basic expansions (like <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded font-mono text-xs">best [keyword]</code>). 
+          <strong>Deep Level 2 (L2)</strong> automatically takes every discovered Level 1 suggestion and executes inner wildcard searches 
+          (such as <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded font-mono text-xs">* [suggestion] *</code>), revealing ultra long-tail sub-queries that normal keyword tools miss.
+        </p>
+      </div>
+
+      <!-- Q4 -->
+      <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+          <FeatherIcon name="check-circle" class="w-5 h-5 text-indigo-500" />
+          Is my keyword data sent to any remote server or third party?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          No. 100% of your harvested keywords, project lists, and CSV exports remain strictly on your local computer. Instant KW does not track, collect, or transmit any user data or personal information. Read our full <a href="/instant-kw/privacy" class="text-indigo-600 dark:text-indigo-400 underline">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <!-- Q5 -->
+      <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow">
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+          <FeatherIcon name="check-circle" class="w-5 h-5 text-indigo-500" />
+          What should I do if Google rate-limits suggestion requests?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+          If you run heavy Level 2 wildcard searches rapidly, Google may temporarily rate-limit direct suggest API responses. 
+          To prevent this:
+          <br/>• Increase the <strong>Pacing Delay</strong> slider in the extension popup (e.g. set delay to 500ms - 1000ms).
+          <br/>• Pause harvesting for a few minutes before starting a new seed keyword.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Developer Info Section -->
+  <section id="contact" class="p-6 max-w-5xl mx-auto mt-6 mb-12">
+    <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2">
+        <FeatherIcon name="mail" class="w-6 h-6 text-indigo-500" />
+        <span>Contact Developer & Report Issues</span>
+      </h2>
+      
+      <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+        Have a bug to report, a feature request, or need help? Reach out directly to Lakhan Dewangan through any of the following channels:
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Channel 1: Email -->
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 flex items-center gap-3">
+          <FeatherIcon name="mail" class="w-6 h-6 text-indigo-500 flex-shrink-0" />
+          <div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">Direct Email Support</div>
+            <a href="mailto:dewanganlakhan@gmail.com" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
+              dewanganlakhan@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Channel 2: Twitter / X -->
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 flex items-center gap-3">
+          <FeatherIcon name="twitter" class="w-6 h-6 text-indigo-500 flex-shrink-0" />
+          <div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">Twitter / X DM</div>
+            <a href="https://x.com/dewanganlakhan" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
+              @dewanganlakhan
+            </a>
+          </div>
+        </div>
+
+        <!-- Channel 3: GitHub -->
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 flex items-center gap-3">
+          <FeatherIcon name="github" class="w-6 h-6 text-indigo-500 flex-shrink-0" />
+          <div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">GitHub Repository</div>
+            <a href="https://github.com/dewanganlakhan" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
+              github.com/dewanganlakhan
+            </a>
+          </div>
+        </div>
+
+        <!-- Channel 4: Portfolio Website -->
+        <div class="p-4 rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40 flex items-center gap-3">
+          <FeatherIcon name="external-link" class="w-6 h-6 text-indigo-500 flex-shrink-0" />
+          <div>
+            <div class="text-xs text-gray-500 dark:text-gray-400">Personal Website</div>
+            <a href="https://lakhandewangan.com" target="_blank" rel="noopener noreferrer" class="font-semibold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400">
+              lakhandewangan.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="dark:bg-primary-dark bg-primary-light text-white p-6 text-center rounded-t-xl">
+    <div class="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+      <div>
+        &copy; 2026 Lakhan Dewangan · Instant KW Support
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/instant-kw" class="hover:underline">Instant KW Landing Page</a>
+        <span>·</span>
+        <a href="/instant-kw/privacy" class="hover:underline">Privacy Policy</a>
+        <span>·</span>
+        <a href="/" class="hover:underline">Portfolio Home</a>
+      </div>
+    </div>
+  </footer>
+</Layout>
