@@ -27,7 +27,7 @@ import FeatherIcon from '../../components/FeatherIcon.astro';
           />
           <div>
             <h1 class="text-xl md:text-2xl font-bold leading-tight">Instant KW Privacy Policy</h1>
-            <p class="text-xs md:text-sm text-indigo-200">Manifest V3 Data Protection & Privacy Terms</p>
+            <p class="text-xs md:text-sm text-indigo-200">Chrome Web Store Compliance & Data Protection Policy</p>
           </div>
         </div>
       </div>
@@ -44,45 +44,58 @@ import FeatherIcon from '../../components/FeatherIcon.astro';
   <section class="p-6 md:p-10 max-w-4xl mx-auto">
     <div class="dark:bg-surface-dark bg-surface-light border border-gray-200 dark:border-gray-800 rounded-2xl p-6 md:p-8 shadow-xl">
       <div class="text-xs text-gray-500 dark:text-gray-400 mb-6">
-        Last updated: August 27, 2026 · Developer: <strong>Lakhan Dewangan</strong>
+        Last updated: August 27, 2026 · Developer: <strong>Lakhan Dewangan</strong> (<a href="https://lakhandewangan.com" class="text-indigo-600 dark:text-indigo-400 underline">lakhandewangan.com</a>)
       </div>
 
       <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">1. Overview</h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        <strong>Instant KW - Google Autocomplete & Wildcard Harvester</strong> ("Extension") is committed to protecting your privacy. This Privacy Policy explains our practices regarding user data and permission disclosures for the Chrome Web Store.
+        <strong>Instant KW - Google Autocomplete & Wildcard Harvester</strong> ("Extension") is committed to protecting user privacy and ensuring full compliance with the Google Chrome Web Store Developer Program Policies.
       </p>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">2. Information We Collect and How It Is Used</h2>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">2. Information Collection and Usage</h2>
       <ul class="list-disc list-inside space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        <li><strong>No Personal Data Collection:</strong> The Extension does NOT collect, transmit, track, or sell any personally identifiable information (PII), browsing history, IP addresses, or user credentials.</li>
-        <li><strong>Local Storage Only:</strong> All seed keywords entered and suggestions returned from Google Autocomplete are stored exclusively on your local computer using the browser's <code class="bg-gray-100 dark:bg-gray-800 px-1 rounded text-indigo-600 dark:text-indigo-400 font-mono text-xs">chrome.storage.local</code> API.</li>
-        <li><strong>No Remote Server Transmission:</strong> None of your stored keywords, project histories, or exported CSV files are ever transmitted to external servers, third-party analytics platforms, or developers.</li>
+        <li><strong>Zero Personal Data Collection:</strong> The Extension does NOT collect, transmit, track, store, or sell any personally identifiable information (PII), browsing history, IP addresses, financial details, health info, or user credentials.</li>
+        <li><strong>Local Storage Processing:</strong> Any seed keywords entered by the user and the autocomplete suggestions returned by Google are processed and saved exclusively on your local device using the browser's <code class="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-indigo-600 dark:text-indigo-400 font-mono text-xs">chrome.storage.local</code> storage API.</li>
+        <li><strong>No Third-Party Transmission:</strong> None of your stored keywords, project histories, or exported CSV files are ever transmitted to any external remote servers, third-party analytics platforms, tracking networks, or developers.</li>
       </ul>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">3. Permissions Explanation</h2>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">3. Chrome Web Store Policy Certifications</h2>
+      <div class="p-4 rounded-xl border border-emerald-200 dark:border-emerald-800/60 bg-emerald-50/50 dark:bg-emerald-950/20 mb-6 space-y-2 text-sm text-gray-700 dark:text-gray-300">
+        <p class="flex items-center gap-2 font-semibold text-emerald-700 dark:text-emerald-300">
+          <FeatherIcon name="check-circle" class="w-4 h-4 text-emerald-500" />
+          Official Certification Declarations:
+        </p>
+        <ul class="list-disc list-inside space-y-1 pl-2 text-xs md:text-sm">
+          <li>The Extension does not sell user data to third parties.</li>
+          <li>The Extension does not use or transfer user data for purposes unrelated to the item's core single purpose.</li>
+          <li>The Extension does not use or transfer user data to determine creditworthiness or for lending purposes.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">4. Permissions Explanation</h2>
       <div class="space-y-3 text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
-        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
-          <strong class="text-gray-900 dark:text-white font-mono">storage</strong>: To store keyword projects locally on your computer so you can access them in history and the Keyword Studio dashboard.
+        <div class="p-3.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">storage</strong>: Required to save harvested keyword suggestions and project history locally on the user's browser.
         </div>
-        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
-          <strong class="text-gray-900 dark:text-white font-mono">downloads</strong>: To allow you to download CSV files of your harvested keywords directly to your local downloads folder.
+        <div class="p-3.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">downloads</strong>: Required to allow users to export and download structured CSV keyword files directly to their local downloads folder.
         </div>
-        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
-          <strong class="text-gray-900 dark:text-white font-mono">tabs / activeTab / scripting</strong>: To open the Keyword Studio dashboard tab in your browser and provide optional fallback suggestion harvesting.
+        <div class="p-3.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">tabs / activeTab / scripting</strong>: Required to open the Keyword Studio workspace dashboard tab in your browser and inspect DOM suggestion elements if visual search automation is enabled.
         </div>
-        <div class="p-3 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
-          <strong class="text-gray-900 dark:text-white font-mono">Host Permissions (*://suggestqueries.google.com/*, *://*.google.com/*)</strong>: To fetch real-time search suggestions from Google's public autocomplete API on your behalf.
+        <div class="p-3.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/40">
+          <strong class="text-gray-900 dark:text-white font-mono">Host Permissions (*://suggestqueries.google.com/*, *://*.google.com/*)</strong>: Required to fetch search suggestion queries from Google's public autocomplete endpoint on your behalf.
         </div>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">4. Single Purpose Declaration</h2>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">5. Single Purpose Declaration</h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-        The sole purpose of this Extension is to assist users in keyword research by harvesting Google Autocomplete suggestions and wildcard variations and exporting them to CSV format.
+        The sole single purpose of Instant KW is to assist users in keyword research by harvesting Google Autocomplete suggestions and wildcard variations and exporting them to CSV format.
       </p>
 
-      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">5. Contact & Support</h2>
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">6. Contact Developer</h2>
       <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-        If you have questions regarding this Privacy Policy, please visit our <a href="/instant-kw/support" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">Support Portal</a> or contact developer Lakhan Dewangan at <a href="mailto:dewanganlakhan@gmail.com" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">dewanganlakhan@gmail.com</a>.
+        If you have questions regarding this Privacy Policy, please visit our <a href="/instant-kw/support" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">Support Portal</a> or contact developer <strong>Lakhan Dewangan</strong> directly at <a href="mailto:dewanganlakhan@gmail.com" class="text-indigo-600 dark:text-indigo-400 underline font-semibold">dewanganlakhan@gmail.com</a>.
       </p>
     </div>
   </section>
